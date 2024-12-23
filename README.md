@@ -19,7 +19,7 @@ This project scrapes articles from a news website, summarizes them using OpenAI,
    ```bash
    pip install -r requirements.txt
    ```
-3. Create a `config.py` file and save your OpenAI API key with the variable name OPENAI_API_KEY:
+3. Create a `config.py` file in the root folder of the repository and save your OpenAI API key with the variable name:
    ```python
    OPENAI_API_KEY = "your_openai_api_key"
    ```
