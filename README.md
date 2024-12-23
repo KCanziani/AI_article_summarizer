@@ -1,7 +1,7 @@
 # Article Scraper and Summarizer
 
 ## Overview
-This project scrapes articles from a news website, summarizes them using OpenAI, and outputs the results in CSV and HTML formats. It's designed to automate the process of content extraction and provide a concise summary for easy review. The tool is especially useful for staying up to date with AI-related news, providing an easy way to skim summaries and open articles of interest.
+This project scrapes articles from a news website, summarizes them using OpenAI, and outputs the results in CSV and HTML formats. It automates content extraction and provides concise summaries for easy review. This tool is particularly useful for staying up-to-date with AI-related news, offering a quick way to skim summaries and open articles of interest.
 
 ## Features
 - Scrapes articles from [Artificial Intelligence News](https://www.artificialintelligence-news.com).
@@ -14,16 +14,17 @@ This project scrapes articles from a news website, summarizes them using OpenAI,
 - `results/output.html`: HTML file with clickable links and summaries.
 
 ## How to Run
-1. Clone the repository:
-   ```bash
-   git clone <repository_url>
-   ```
+1. Clone the repository.
 2. Install the required Python packages:
    ```bash
    pip install -r requirements.txt
    ```
-3. Open `script.ipynb` in Jupyter Notebook or VSCode and run the cells.
-4. Find the generated files in the `data/` and `results/` folders.
+3. Create a `config.py` file and save your OpenAI API key with the variable name OPENAI_API_KEY:
+   ```python
+   OPENAI_API_KEY = "your_openai_api_key"
+   ```
+4. Open `AI_news_summary_web.ipynb` in Jupyter Notebook or VSCode and run the cells.
+5. Find the generated files in the `data/` and `results/` folders.
 
 ## Why It’s Useful
 - Quickly review the latest news without having to visit multiple websites.
