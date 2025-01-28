@@ -8,7 +8,7 @@ This project is for **PERSONAL USE ONLY**. It was created as a learning exercise
 - Obtain necessary permissions for any commercial use
 
 ## Overview
-This project automatically scrapes AI-related articles from multiple sources (MIT News, Stanford News), summarizes them, and sends email reports. It's designed to help keep track of the latest developments in AI across different academic institutions and news sources, providing a consolidated daily digest.
+This project automatically scrapes AI-related articles from multiple sources (AI News, MIT News, Stanford News), summarizes them, and sends email reports. It's designed to help keep track of the latest developments in AI across different academic institutions and news sources, providing a consolidated daily digest.
 
 ## Features
 - Multi-source article scraping (AI News, MIT News, Stanford News)
@@ -18,6 +18,7 @@ This project automatically scrapes AI-related articles from multiple sources (MI
 - Configurable email recipients
 
 ## Project Structure
+```
 AI_article_summarizer/
 │
 ├── src/
@@ -38,6 +39,7 @@ AI_article_summarizer/
 ├── requirements.txt
 ├── main.py              # Main execution script
 └── .env                 # Environment variables
+```
 
 ## Setup
 1. Clone the repository:
