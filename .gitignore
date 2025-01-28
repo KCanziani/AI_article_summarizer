@@ -11,6 +11,12 @@ __pycache__/
 *.py[cod]
 *$py.class
 *.log
+logs/*
+data/*
+results/*
+!logs/.gitkeep
+!data/.gitkeep
+!results/.gitkeep
 
 # Entornos virtuales
 venv/
