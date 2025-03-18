@@ -62,9 +62,9 @@ AI_article_summarizer/
 
 ## Configuration
 
-config.py: Contains configuration settings
-.env: Stores sensitive information like email credentials
-Customize source URLs and other settings in the configuration files
+- config.py: Contains configuration settings
+- .env: Stores sensitive information like email credentials
+- Customize source URLs and other settings in the configuration files
 
 ## Usage
 Run the main script:
@@ -74,35 +74,36 @@ Run the main script:
 
 This will:
 
-Scrape articles from configured sources
-Generate summaries
-Create CSV and HTML reports
-Send email digest to configured recipients
+- Scrape articles from configured sources
+- Generate summaries
+- Create CSV and HTML reports
+- Send email digest to configured recipients
 
 ## Output
 
-CSV files in data/ folder: articles_week_YYYY-MM-DD.csv
-HTML reports in results/ folder: articles_week_YYYY-MM-DD.html
-Email reports sent to configured recipients
-Logs in logs/ folder
+- CSV files in data/ folder: articles_week_YYYY-MM-DD.csv
+- HTML reports in results/ folder: articles_week_YYYY-MM-DD.html
+- Email reports sent to configured recipients
+- Logs in logs/ folder
 
 ## Development
 
 Development process and experiments are documented in Jupyter notebooks in the notebooks/ directory
+
 See development.ipynb for code evolution and testing
 
 ## Error Handling
 
-Comprehensive logging system
-Email sending retry mechanism
-Graceful handling of scraping failures
+- Comprehensive logging system
+- Email sending retry mechanism
+- Graceful handling of scraping failures
 
 ## Future Improvements
 
-Add more news sources
-Implement article categorization
-Add web interface for configuration
-Include sentiment analysis
+- Add more news sources
+- Implement article categorization
+- Add web interface for configuration
+- Include sentiment analysis
 
 ## Contributing
 Feel free to submit issues and enhancement requests!

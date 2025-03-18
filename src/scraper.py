@@ -16,7 +16,7 @@ from .utils import parse_article_date, setup_http_session
 from .summarizer import summarize_with_openai
 from config.config import AI_NEWS_URL, MIT_NEWS_URL, STANFORD_NEWS_URL
 from .email_sender import send_combined_email_report
-from typing import List, Dict, Optional
+from typing import List, Dict
 
 # Initialize HTTP session
 session = setup_http_session()
@@ -511,7 +511,7 @@ def process_all_news(recipients, target_date=None):
                         # Get and summarize content
                         content = content_func(article['Link'])
                         if content:
-                            article['Summary'] = "Summary not available" #summarize_with_openai(content)
+                            article['Summary'] = summarize_with_openai(content)
                         article['Source'] = source_name
                         all_articles.append(article)
                         
