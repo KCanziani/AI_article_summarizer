@@ -120,3 +120,5 @@ This tool is:
 - Subject to the terms of service of the respective websites
 
 Please respect copyright and terms of service when using this tool. The author assumes no responsibility for misuse or any violations of terms of service.
+
+[![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2FKCanziani%2FAI_article_summarizer&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false)](https://hits.seeyoufarm.com)

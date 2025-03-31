@@ -5,7 +5,7 @@ Contains helper functions used across the application
 
 from datetime import datetime
 import logging
-
+import os
 
 def safe_str(value):
     """
@@ -57,3 +57,39 @@ def setup_http_session():
     session.mount('https://', retries)
     
     return session
+
+
+def setup_logging(log_level=logging.INFO):
+    """
+    Set up logging configuration for the entire application
+    
+    Args:
+        log_level: Logging level (default: INFO)
+    
+    Returns:
+        Logger: Configured logger instance
+    """
+    # Create logs directory if it doesn't exist
+    log_dir = "logs"
+    if not os.path.exists(log_dir):
+        os.makedirs(log_dir)
+    
+    # Create timestamped log filename
+    log_filename = os.path.join(log_dir, f"ai_news_scraper_{datetime.now().strftime('%Y%m%d_%H%M%S')}.log")
+    
+    # Configure logging
+    logging.basicConfig(
+        level=log_level,
+        format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
+        handlers=[
+            # File handler for persistent logs
+            logging.FileHandler(log_filename),
+            # Stream handler for console output
+            logging.StreamHandler()
+        ]
+    )
+    
+    logger = logging.getLogger('ai_news_scraper')
+    
+    logger.info(f"Logging configured. Log file: {log_filename}")
+    return logger
